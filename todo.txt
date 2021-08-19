@@ -1,0 +1,16 @@
+Fredag x3 todo som er mest viktig!
+
+1) Fixe litt mere views options (bakeplate, dører, vange/trap i lag? + kanskje side planker, hengsler)
+
+2) Lag å style en swtich toggle componment som jeg kan bruke till alle views
+
+3) lag toggle system i grashopper for view
+
+
+-----------------------------------------------
+
+down the line...
+
+- Refactor code med sass
+- Material tykkelse frame around hyller er scaler ikke med 19mm / 21mm
+- 

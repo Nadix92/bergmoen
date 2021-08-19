@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bergmoen Konfigurator</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Bergmoen Konfigurator</a></h1>
+      <i class="fas fa-bars"></i>
+    </header>
+
+    <main>
+      <div class="konfig-container">
+        <div class="sd-viewer" id="sdv-container"></div>
+        <div class="parameters">
+          <h2>Parameters</h2>
+
+          <!-- <div class="form-container">
+            <label for="name">Param Name:</label>
+            <input type="text" id="name" />
+          </div> -->
+
+          <div class="form-container">
+            <label for="hoyde">Høyde (Fra gulv til toppen av trappa) </label>
+            <input type="number" id="hoyde" />
+            <span id="min-hoyde"></span>
+            <span id="max-hoyde"></span>
+            <span id="current-hoyde"></span>
+          </div>
+
+          <div class="form-container">
+            <label for="lengde">Lengde:</label>
+            <input type="number" id="lengde" />
+            <span id="min-lengde"></span>
+            <span id="max-lengde"></span>
+            <span id="current-lengde"></span>
+          </div>
+
+          <div class="form-container" id="apply-btn">
+            <button class="btn">Apply</button>
+          </div>
+
+          <hr>
+
+          <div class="radio-container">
+            <p>Skap Dybde:</p>
+            <div class="radio">
+              <input type="radio" name="skap-dybde" value="0" class="radio__input" id="skap-dybde-choice-0" />
+              <label class="radio__lable" for="skap-dybde-choice-0">600mm</label>
+
+              <input type="radio" name="skap-dybde" value="1" class="radio__input" id="skap-dybde-choice-1" />
+              <label class="radio__lable" for="skap-dybde-choice-1">850mm</label>
+            </div>
+          </div>
+
+          <div class="radio-container">
+            <p>Plate Tykkelse:</p>
+            <div class="radio">
+              <input type="radio" name="plate-tykkelse" value="0" class="radio__input" id="plate-choice-0" />
+              <label class="radio__lable" for="plate-choice-0">19mm</label>
+
+              <input type="radio" name="plate-tykkelse" value="1" class="radio__input" id="plate-choice-1" />
+              <label class="radio__lable" for="plate-choice-1">21mm</label>
+            </div>
+          </div>
+
+          <div class="radio-container">
+            <p>Dør Bredde:</p>
+            <div class="radio">
+              <input type="radio" name="dor-bredde" value="0" class="radio__input" id="dor-bredde-choice-0" />
+              <label class="radio__lable" for="dor-bredde-choice-0">500mm</label>
+
+              <input type="radio" name="dor-bredde" value="1" class="radio__input" id="dor-bredde-choice-1" />
+              <label class="radio__lable" for="dor-bredde-choice-1">750mm</label>
+            </div>
+          </div>
+
+          <hr />
+          <h2>Visnings Instillinger</h4>
+            <div class="view-container">
+            <!-- <div class="toggle">
+              <h4>Vis Hull</h4>
+              <label class="switch" for="vis-hull">
+                <input type="checkbox" id="vis-hull" />
+                <span class="slider round"></span>
+              </label>
+            </div> -->
+
+            <div class="toggle">
+              <h4>Vis Bakplate</h4>
+              <label class="switch" for="vis-bakplate">
+                <input type="checkbox" id="vis-bakplate" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+
+            <div class="toggle">
+              <h4>Vis Trapp</h4>
+              <label class="switch" for="vis-trapp">
+                <input type="checkbox" id="vis-trapp" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          
+
+          <div class="toggle">
+            <h4>Vis Dører</h4>
+            <label class="switch" for="vis-dør">
+              <input type="checkbox" id="vis-dør" />
+              <span class="slider round"></span>
+            </label> 
+          </div>
+        </div>
+
+        <div class="toggle">
+          <h4>Vis Hengsler</h4>
+          <label class="switch" for="vis-hengsler">
+            <input type="checkbox" id="vis-hengsler" />
+            <span class="slider round"></span>
+          </label> 
+        </div> 
+      </div>
+
+      <!-- Vistnings divs end -->
+    </div>
+
+          <!-- <label for="vis-hull">Vis Hull</label>
+          <input type="checkbox" id="vis-hull" /> -->
+
+          <!-- Input end  -->
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h2>footer</h2>
+    </footer>
+
+    <script src="https://viewer.shapediver.com/v2/2.18.0/sdv.concat.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
